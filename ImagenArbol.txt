@@ -1,0 +1,9 @@
+digraph ImagenArbol
+{
+h->d
+h->k
+d->a
+d->e
+k->i
+k->n
+}

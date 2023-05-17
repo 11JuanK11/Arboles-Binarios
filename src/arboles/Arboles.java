@@ -18,7 +18,7 @@ public class Arboles {
      * gbadcfhm
      */
     public static void main(String... args) {
-        String S = "hdkaeinp";
+        String S = "hdkaein";
         ArbolBinario A = new ArbolBinario();
         A.Construir(S);
         A.Mostrar_Arbol();
