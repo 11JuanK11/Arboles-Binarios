@@ -1,39 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package arboles;
+
 public class Nodo {
-    private Nodo Lizq;
-    private Nodo Lder;
     private char Dato;
+    private int FB;
+    private Nodo Lizq, Lder;
 
     public Nodo() {
-        Lizq = null;
-        Lder = null;
-        Dato = ' ';
-    }
-    
-    public Nodo(char C) {
-        Lizq = null;
-        Lder = null;
-        Dato = C;
+        this.Dato = ' ';
+        this.FB = 0;
+        this.Lizq = null;
+        this.Lder = null;
     }
 
-    public Nodo getLizq() {
-        return Lizq;
-    }
-
-    public void setLizq(Nodo Lizq) {
-        this.Lizq = Lizq;
-    }
-
-    public Nodo getLder() {
-        return Lder;
-    }
-
-    public void setLder(Nodo Lder) {
-        this.Lder = Lder;
+    public Nodo(char Dato) {
+        this.Dato = Dato;
+        this.FB = 0;
+        this.Lizq = null;
+        this.Lder = null;
     }
 
     public char getDato() {
@@ -43,11 +26,29 @@ public class Nodo {
     public void setDato(char Dato) {
         this.Dato = Dato;
     }
-    
-    
-    
 
-    
+    public int getFB() {
+        return FB;
+    }
+
+    public void setFB(int FB) {
+        this.FB = FB;
+    }
+
+    public Nodo getLizq() {
+        return Lizq;
+    }
+
+    public void setLizq(Nodo LI) {
+        this.Lizq = LI;
+    }
+
+    public Nodo getLder() {
+        return Lder;
+    }
+
+    public void setLder(Nodo LD) {
+        this.Lder = LD;
+    }
     
 }
-

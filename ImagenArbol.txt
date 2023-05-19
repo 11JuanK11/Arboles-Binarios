@@ -6,4 +6,14 @@ d->a
 d->e
 k->i
 k->n
+a->L
+a->null01
+e->null02
+e->null03
+i->null04
+i->null05
+n->null06
+n->null07
+L->null08
+L->O
 }
