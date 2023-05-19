@@ -35,6 +35,7 @@ public class Arboles {
                     if (C == null){
                         Nodo X = new Nodo(Dato.charAt(0));
                         A.Insertar(A.Punta, X);
+                        A.AVL();
                     }else{
                         System.out.println("El dato ya existe en el arbol.");
                     }

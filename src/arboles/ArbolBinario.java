@@ -251,7 +251,7 @@ public class ArbolBinario {
         }
     }
 
-    private void AVL() {
+    public void AVL() {
         Nodo Q, R, C;
         Nodo P = Desbalance(this.Punta);
         int DesH;
