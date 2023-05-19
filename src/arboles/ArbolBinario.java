@@ -7,7 +7,6 @@ public class ArbolBinario {
 
     Nodo Punta;
 
-    //Modificar
     public void Construir(String Cadena) {
         char[] A = Cadena.toCharArray();
         int i = 0;
@@ -172,11 +171,6 @@ public class ArbolBinario {
                 if (P.getLder() == null && P.getLizq() == null) {
                     System.out.println("El dato " + Dato + " no tiene primos hermanos.");
                 } else {
-//                if (Dato > P.getDato()) {
-//                    P = P.getLizq();
-//                } else {
-//                    P = P.getLder();
-//                }
                     if (P.getLder() == null) {
                         System.out.println("El primo hermano de " + Dato + " es " + P.getLizq().getDato());
                     } else {
@@ -384,31 +378,10 @@ public class ArbolBinario {
             int B = FactorBalance(R);
             R.setFB(B);
             if (B == 2 || B == -2) {
-                //P = R;
                 return R;
             }
         }
         return P;
-    }
-
-    public int AlturaAVL(Nodo R) {
-        int cont1 = 1, cont2 = 1;
-        if (R != null) {
-            if (R.getLizq() != null) {
-                cont1 = Altura(R.getLizq()) + 1;
-            }
-            if (R.getLder() != null) {
-                cont2 = Altura(R.getLder()) + 1;
-            }
-            if (cont1 >= cont2) {
-                return cont1;
-            } else {
-                return cont2;
-            }
-        } else {
-            return 0;
-        }
-
     }
 
     public Nodo Buscar2(Nodo P, Nodo R, char Dato) {
